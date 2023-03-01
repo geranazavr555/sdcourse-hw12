@@ -1,0 +1,6 @@
+GET http://localhost:8080/products
+Accept: application/json
+
+###
+GET http://localhost:8080/products?userId=0bbec6a1-abcd-482b-9c16-990e7d2fc1cd
+Accept: application/json

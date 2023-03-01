@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" strict="true"
+               name="XMLConfigTest" packages="org.apache.logging.log4j.test">
+    <Filter type="ThresholdFilter" level="info"/>
+
+    <Appenders>
+        <Console name="console">
+            <PatternLayout>
+                <pattern>%-5p [%d{yyyy-MM-dd HH:mm:ss}] %c{1}: %m (%F:%L, %t)%n</pattern>
+            </PatternLayout>
+            <ThresholdFilter level="DEBUG"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="console"/>
+        </Root>
+    </Loggers>
+</Configuration>

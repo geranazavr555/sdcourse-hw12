@@ -1,0 +1,15 @@
+POST http://localhost:8080/products?name=test
+Content-Type: application/x-www-form-urlencoded
+
+###
+POST http://localhost:8080/products?usdPrice100=test
+Content-Type: application/x-www-form-urlencoded
+
+
+###
+POST http://localhost:8080/products?usdPrice100=test&name=test
+Content-Type: application/x-www-form-urlencoded
+
+###
+POST http://localhost:8080/products?usdPrice100=1000&name=test3
+Content-Type: application/x-www-form-urlencoded
